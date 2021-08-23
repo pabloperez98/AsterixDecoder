@@ -1,5 +1,13 @@
 Bienvenidos al manual de uso de la aplicación AsterixDecoder, desarrollado por un estudiante de la EETAC (Universidad Politécnica de Cataluña). En este pequeño resumen se enumerarán las distintas opciones que posee el programa y también servirá como manual de uso para su funcionamiento correcto.
 
+- - - - - - - - - - - - - - - - - - - - - - - - - INTRODUCCIÓN - - - - - - - - - - - - - - - - - - - - - - - - -
+
+El objetivo de este trabajo consiste en desarrollar un software reproductor gráfico y analizador de datos ASTERIX (Intercambio de información de vigilancia de EUROCONTROL) mediante lenguaje C# que sea capaz de decodificar cualquier fichero ASTERIX del tráfico aéreo (tanto de superficie, aproximación y ruta) de España y sud de Francia para las siguientes categorías: CAT001 (Monoradar Data Target Reports), CAT002 (Monoradar Service Messages), CAT008 (Monoradar Derived Weather Information), CAT010 (Monosensor Surface Movement Data (SMR, MLAT)), CAT021 (ADS-B Messages), CAT034 (Transmission of Monoradar Service Messages), CAT048 (Monoradar Target Reports) y CAT062 (System Track Data).
+
+El programa, capaz de analizar hasta dos ficheros a la vez, muestra los datos radar en formato tabla, con posibilidad de hacer búsquedas mediante filtros encadenados. Además, muestra los vuelos visualmente en un mapa para ver la evolución de estos en un período de tiempo, con la opción de añadir capas del espacio aéreo (Aerovías, TMAs, SIDs, STARs). Se pueden plotear todos los vuelos del fichero a la vez o filtrarlos según unos campos de interés (callsign, categoría, estación radar, hora). Incluye diversas opciones extras para dar al usuario una experiencia más completa como, por ejemplo, extraer la información de la tabla de datos en un fichero CSV o generar un KML de los vuelos simulados para verlo en Google Earth (3D).
+
+Este software desarrollado es una herramienta innovadora, ya que previamente no existía la posibilidad de comparar pistas monoradar (captadas por radares) y pistas SACTA (procesadas y son las que visualizan los controladores) paralelamente a través de un programa Windows. Principalmente la aplicación está enfocada para su uso en ENAIRE, dónde existe la necesidad de visualizar en un mapa las pistas monoradar y multiradar simultáneamente y así poder analizar la precisión de estas y buscar incidencias ATC en temas de vigilancia.
+
 
 - - - - - - - - - - - - - - - - - - - - - - - - - DESCRIPCIÓN GENERAL - - - - - - - - - - - - - - - - - - - - - - - - -
 
